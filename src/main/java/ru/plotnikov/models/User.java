@@ -1,7 +1,5 @@
 package ru.plotnikov.models;
 
-import ru.plotnikov.form.UserForm;
-
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -28,10 +26,6 @@ public class User {
 
         this.name = name;
         this.age = age;
-    }
-
-    public static User getUser(UserForm userForm) {
-        return new User(userForm.getName(), userForm.getAge());
     }
 
     public long getId() {

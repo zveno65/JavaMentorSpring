@@ -7,36 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b1f962-d783-42ab-989d-4c5c67335680" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ConfigProj/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConfigProj/src/main/java/ConfiguraЫeMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConfigProj/src/main/java/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConfigProj/src/main/java/MessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConfigProj/src/main/java/SpringConfigExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConfigProj/src/main/java/StandardOutMessageRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConfigProj/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConfigProj/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/HibernateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/AddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/DeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/EditController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/ListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/UserHibernateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/form/UserForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/services/UserHibernateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/ClassicalMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/MusicPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson11.SpringAnnotations3/src/main/java/ru/alishev/springcourse/RockMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/AddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/EditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/form/UserForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/HibernateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/AddController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/EditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/EditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/form/UserForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/HibernateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/AddController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/EditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/EditController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/form/UserForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/models/User.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +45,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -77,9 +68,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaMentorServlet1/stepic_java_webserver/MyWeb" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -185,6 +177,10 @@
       <updated>1570722817555</updated>
       <workItem from="1570722821668" duration="6462000" />
       <workItem from="1570788611763" duration="2991000" />
+      <workItem from="1570791715404" duration="330000" />
+      <workItem from="1570799400350" duration="669000" />
+      <workItem from="1570883085197" duration="1986000" />
+      <workItem from="1570895299389" duration="2442000" />
     </task>
     <servers />
   </component>
@@ -203,5 +199,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
 </project>
