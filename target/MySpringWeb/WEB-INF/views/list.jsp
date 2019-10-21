@@ -44,18 +44,21 @@
                             <input type="hidden" name="id" value="${user.id}">
                             <button type="submit">Delete</button>
                         </form>
-                            <%--                            <a href="/delete?id=<c:out value="${user.getId()}"/>">Delete</a>--%>
                     </td>
                 </tr>
             </c:forEach>
             </tbody>
         </table>
-        <%--        <%= (List<User>) request.getAttribute("users") %>--%>
     </div>
 </div>
 
 <div>
-    <button onclick="location.href='/add'">Add new user</button>
+    <button onclick="location.href='/registration'">Add new user</button>
+</div>
+<div>
+    <form action="/logout" method="post">
+        <input type="submit" value="Sing out"/>
+    </form>
 </div>
 </body>
 </html>

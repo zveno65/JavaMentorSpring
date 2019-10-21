@@ -25,7 +25,14 @@
 </div>
 
 <div>
+    <form action="/logout" method="post">
+        <input type="submit" value="Sing out"/>
+    </form>
+</div>
+
+<div>
     <button onclick="location.href='../..'">Back to main</button>
 </div>
+
 </body>
 </html>

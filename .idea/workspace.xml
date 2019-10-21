@@ -7,27 +7,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b1f962-d783-42ab-989d-4c5c67335680" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/SecSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/SecurityWebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/exception/UserAccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/model/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/AppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/AddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/EditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/form/UserForm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/DeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/DeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/EditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controllers/ListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/ListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/UserHibernateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/services/UserHibernateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/service/UserHibernateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/AppInitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/AddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/EditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/EditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/form/UserForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/AddController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/DeleteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/EditController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controllers/ListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/dao/UserHibernateDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/services/UserHibernateService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/AppInitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/AddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/EditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/EditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/form/UserForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/AddController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/DeleteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/EditController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controllers/ListController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/dao/UserHibernateDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/services/UserHibernateService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/services/UserService.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +71,7 @@
       <list>
         <option value="Jsp File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -68,14 +100,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaMentorServlet1/stepic_java_webserver/MyWeb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Home\Desktop\java\JavaMentorSpring\MySpringWeb\src\main\webapp\WEB-INF\views" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,7 +129,6 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.24" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.24" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="MySpringWeb:war exploded">
@@ -181,6 +218,17 @@
       <workItem from="1570799400350" duration="669000" />
       <workItem from="1570883085197" duration="1986000" />
       <workItem from="1570895299389" duration="2442000" />
+      <workItem from="1570985638280" duration="1305000" />
+      <workItem from="1571057129922" duration="5935000" />
+      <workItem from="1571138495681" duration="3869000" />
+      <workItem from="1571231382529" duration="14332000" />
+      <workItem from="1571251703909" duration="1418000" />
+      <workItem from="1571323648214" duration="5299000" />
+      <workItem from="1571337916645" duration="2482000" />
+      <workItem from="1571396182137" duration="2186000" />
+      <workItem from="1571560405043" duration="5202000" />
+      <workItem from="1571577734503" duration="14887000" />
+      <workItem from="1571663867796" duration="4538000" />
     </task>
     <servers />
   </component>
@@ -204,5 +252,21 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/LoginController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/plotnikov/model/UserDetailsImpl.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

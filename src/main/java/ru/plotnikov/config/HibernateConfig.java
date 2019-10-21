@@ -18,15 +18,21 @@ import java.util.Properties;
 @EnableTransactionManagement(proxyTargetClass = true)
 @PropertySource(value = "classpath:db.properties")
 public class HibernateConfig {
+    @Value("${driverClassName}")
+    private String driverClassName;
+    @Value("${jdbc.url}")
+    private String url;
+    @Value("${jdbc.username}")
+    private String username;
+    @Value("${jdbc.password}")
+    private String password;
 
-    @Value("${driverClassName}") private String driverClassName;
-    @Value("${jdbc.url}") private String url;
-    @Value("${jdbc.username}") private String username;
-    @Value("${jdbc.password}") private String password;
-
-    @Value("${hibernate.dialect}") private String dialect;
-    @Value("${hibernate.show_sql}") private String show_sql;
-    @Value("${hibernate.hbm2ddl.auto}") private String hbm2ddl;
+    @Value("${hibernate.dialect}")
+    private String dialect;
+    @Value("${hibernate.show_sql}")
+    private String show_sql;
+    @Value("${hibernate.hbm2ddl.auto}")
+    private String hbm2ddl;
 
     private Properties hibernateProperties() {
         Properties properties = new Properties();
@@ -50,7 +56,7 @@ public class HibernateConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan("ru.plotnikov.models");
+        sessionFactory.setPackagesToScan("ru.plotnikov.model");
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
