@@ -1,14 +1,13 @@
 package ru.plotnikov.controller;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import ru.plotnikov.model.Role;
 import ru.plotnikov.model.User;
-import ru.plotnikov.model.UserDetailsImpl;
 
 import javax.servlet.http.HttpSession;
 
@@ -18,14 +17,14 @@ public class LoginController {
     public String performLogin(Model model, HttpSession session) {
         UsernamePasswordAuthenticationToken authentication = (UsernamePasswordAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
 
-        if (!(authentication.getPrincipal() instanceof UserDetailsImpl))
+        if (!(authentication.getPrincipal() instanceof User))
             throw new IllegalArgumentException("Principal can't be null");
 
-        User user = ((UserDetailsImpl) authentication.getPrincipal()).getUserDetails();
+        User user = (User) authentication.getPrincipal();
 
         String viewPath;
 
-        if (user.getRoles().contains("admin"))
+        if (user.getRoles().contains(new Role("ADMIN")))
             viewPath = "redirect:/admin";
         else {
             viewPath = "redirect:/edit";

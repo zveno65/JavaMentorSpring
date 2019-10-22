@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Transactional
-@Repository("userHibernateDao")
+@Repository("userDao")
 public class UserDao implements UserRepository {
 
     private SessionFactory sessionFactory;

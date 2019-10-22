@@ -6,10 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.plotnikov.dao.Dao;
 import ru.plotnikov.dao.UserRepository;
 import ru.plotnikov.model.User;
-import ru.plotnikov.model.UserDetailsImpl;
 
 import java.sql.SQLException;
 
@@ -31,6 +29,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         catch (SQLException e) {
             e.printStackTrace();
         }
-        return new UserDetailsImpl(user);
+        return user;
     }
 }

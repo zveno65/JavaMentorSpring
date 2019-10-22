@@ -3,13 +3,17 @@ package ru.plotnikov.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ru.plotnikov.dao.RoleRepository;
 import ru.plotnikov.dao.UserDao;
 import ru.plotnikov.exception.UserAccountException;
+import ru.plotnikov.model.Role;
 import ru.plotnikov.model.User;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 @Transactional
 @Service
@@ -33,11 +37,13 @@ public class UserHibernateService implements UserService {
     @Override
     public void addUser(User user) throws UserAccountException {
         try {
+            String autority = null;
             if (userDao.findByName(user.getName()) == null) {
                 if (user.getName().equals("Fernando"))
-                    user.setRole("admin");
+                    autority = "ADMIN";
                 else
-                    user.setRole("user");
+                    autority = "USER";
+                user.setRoles(Collections.singleton(new RoleRepository().findByName(autority)));
                 userDao.save(user);
             }
             else

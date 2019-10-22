@@ -18,14 +18,18 @@ import ru.plotnikov.service.UserDetailsServiceImpl;
 @Configuration
 @EnableWebSecurity
 public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
+    @Autowired
+    private UserDetailsService userDetailsService;
+
 
     @Override
     protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+        //auth.authenticationProvider(getAuthenticationProvider());
 //            auth.inMemoryAuthentication()
 //                    .passwordEncoder(passwordEncoder)
 //                    .withUser("u")
 //                    .password(passwordEncoder.encode("p")).roles("user");
-        auth.authenticationProvider(getAuthenticationProvider());
     }
 
     @Override
@@ -33,7 +37,7 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/admin/**","/delete").hasRole("admin")
+                .antMatchers("/admin/**","/delete").hasRole("ADMIN")
                 .antMatchers("/login*","/registration*").permitAll()
                 .anyRequest().authenticated()
                 .and()
@@ -46,22 +50,22 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutUrl("/perform_logout")
                 .deleteCookies("JSESSIONID");
     }
-    @Bean
-    public UserDetailsService getUserDetailsService() {
-        return new UserDetailsServiceImpl();
-    }
+//    @Bean
+//    public UserDetailsService getUserDetailsService() {
+//        return new UserDetailsServiceImpl();
+//    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
-    public DaoAuthenticationProvider getAuthenticationProvider() {
-        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
-        authenticationProvider.setPasswordEncoder(passwordEncoder());
-        authenticationProvider.setUserDetailsService(getUserDetailsService());
-        return authenticationProvider;
-    }
+//    @Bean
+//    public DaoAuthenticationProvider getAuthenticationProvider() {
+//        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
+//        authenticationProvider.setPasswordEncoder(passwordEncoder());
+//        authenticationProvider.setUserDetailsService(getUserDetailsService());
+//        return authenticationProvider;
+//    }
 
 }
