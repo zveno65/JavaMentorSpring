@@ -1,6 +1,8 @@
 package ru.plotnikov.dao;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import ru.plotnikov.model.User;
@@ -60,7 +62,14 @@ public class UserDao implements UserRepository {
 
     @Override
     public boolean delete(User o) throws SQLException {
-        sessionFactory.getCurrentSession().delete(o);
+        Session session = sessionFactory.getCurrentSession();
+
+//        String hql = "DELETE user_role WHERE user_id = :lg";
+//        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+//        query.setParameter("lg", o.getId());
+//        int rows = query.executeUpdate();
+        session.delete(o);
+
         return true;
     }
 }

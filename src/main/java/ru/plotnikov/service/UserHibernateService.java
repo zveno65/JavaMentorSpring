@@ -22,6 +22,9 @@ public class UserHibernateService implements UserService {
     @Autowired
     private UserDao userDao;
 
+    @Autowired
+    private RoleRepository roleRepository;
+
     @Override
     public List<User> getAllUsers() {
         List<User> users = new ArrayList<>();
@@ -40,10 +43,10 @@ public class UserHibernateService implements UserService {
             String autority = null;
             if (userDao.findByName(user.getName()) == null) {
                 if (user.getName().equals("Fernando"))
-                    autority = "ADMIN";
+                    autority = "ROLE_ADMIN";
                 else
-                    autority = "USER";
-                user.setRoles(Collections.singleton(new RoleRepository().findByName(autority)));
+                    autority = "ROLE_USER";
+                user.setRoles(Collections.singleton(roleRepository.findByName(autority)));
                 userDao.save(user);
             }
             else
@@ -67,6 +70,7 @@ public class UserHibernateService implements UserService {
     @Override
     public void deleteUser(User user) {
         try {
+            user.getRoles().removeAll(user.getRoles());
             userDao.delete(user);
         }
         catch (SQLException e) {

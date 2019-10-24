@@ -18,6 +18,6 @@ public class DeleteController {
     public String deleteUser(@RequestParam(value = "id") String id) {
         User user = userService.getUserById(Long.valueOf(id));
         userService.deleteUser(user);
-        return "redirect:/";
+        return "redirect:/admin";
     }
 }

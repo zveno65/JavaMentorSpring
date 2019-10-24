@@ -22,6 +22,8 @@ public class RoleRepository {
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
+    @Transactional(readOnly = true)
     public Role findByName(String name) throws SQLException {
         return (Role) sessionFactory.getCurrentSession().createQuery("from Role where name = :name")
                 .setParameter("name", name)

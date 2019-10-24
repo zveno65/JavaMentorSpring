@@ -13,18 +13,18 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import ru.plotnikov.handler.MySimpleUrlAuthenticationSuccessHandler;
 import ru.plotnikov.service.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity
 public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
-    @Autowired
-    private UserDetailsService userDetailsService;
 
 
     @Override
     protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+        auth.userDetailsService(getUserDetailsService()).passwordEncoder(passwordEncoder());
         //auth.authenticationProvider(getAuthenticationProvider());
 //            auth.inMemoryAuthentication()
 //                    .passwordEncoder(passwordEncoder)
@@ -32,28 +32,33 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
 //                    .password(passwordEncoder.encode("p")).roles("user");
     }
 
+    @Bean
+    public AuthenticationSuccessHandler myAuthenticationSuccessHandler(){
+        return new MySimpleUrlAuthenticationSuccessHandler();
+    }
+
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/admin/**","/delete").hasRole("ADMIN")
-                .antMatchers("/login*","/registration*").permitAll()
+                .antMatchers("/login*").anonymous()
+                .antMatchers("/delete","/registration*").hasAnyRole("ADMIN","ANONYMOUS")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/login")
                 .loginProcessingUrl("/doLogin")
-                .successForwardUrl("/performLogin")
+                .successHandler(myAuthenticationSuccessHandler())
                 .and()
                 .logout()
-                .logoutUrl("/perform_logout")
                 .deleteCookies("JSESSIONID");
     }
-//    @Bean
-//    public UserDetailsService getUserDetailsService() {
-//        return new UserDetailsServiceImpl();
-//    }
+
+    @Bean
+    public UserDetailsService getUserDetailsService() {
+        return new UserDetailsServiceImpl();
+    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {

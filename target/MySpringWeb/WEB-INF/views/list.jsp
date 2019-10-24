@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <html>
 <head>
@@ -36,6 +37,7 @@
                 <tr>
                     <td><c:out value="${user.name}"/></td>
                     <td><c:out value="${user.age}"/></td>
+                    <sec:authorize access="hasRole('ROLE_ADMIN')">
                     <td>
                         <a href="/edit?id=<c:out value="${user.id}"/>">Edit</a>
                     </td>
@@ -45,16 +47,18 @@
                             <button type="submit">Delete</button>
                         </form>
                     </td>
+                    </sec:authorize>
                 </tr>
             </c:forEach>
             </tbody>
         </table>
     </div>
 </div>
-
+<sec:authorize access="hasRole('ROLE_ADMIN')">
 <div>
     <button onclick="location.href='/registration'">Add new user</button>
 </div>
+</sec:authorize>
 <div>
     <form action="/logout" method="post">
         <input type="submit" value="Sing out"/>
