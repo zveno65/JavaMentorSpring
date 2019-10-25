@@ -7,39 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2b1f962-d783-42ab-989d-4c5c67335680" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/handler/MySimpleUrlAuthenticationSuccessHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/SecSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/config/SecSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/DeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/DeleteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/EditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/service/UserHibernateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/service/UserHibernateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/plotnikov/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/plotnikov/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/SecSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/config/SecSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/DeleteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/DeleteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/EditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/EditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/dao/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/dao/RoleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/service/UserHibernateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/service/UserHibernateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/classes/ru/plotnikov/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MySpringWeb/WEB-INF/views/registration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/SecSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/config/SecSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/DeleteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/DeleteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/EditController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/EditController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/dao/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/dao/RoleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/service/UserHibernateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/service/UserHibernateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/plotnikov/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/plotnikov/model/User.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,6 +252,7 @@
       <workItem from="1571760619990" duration="3320000" />
       <workItem from="1571827889701" duration="18855000" />
       <workItem from="1571937586904" duration="5614000" />
+      <workItem from="1572002273899" duration="1742000" />
     </task>
     <servers />
   </component>

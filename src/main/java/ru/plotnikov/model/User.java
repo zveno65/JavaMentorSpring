@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return this.getRoles().stream().map(role -> new SimpleGrantedAuthority(role.getName().toString())).collect(Collectors.toList());
+        return this.getRoles();
     }
 
     @Override

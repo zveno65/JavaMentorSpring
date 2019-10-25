@@ -1,9 +1,11 @@
 package ru.plotnikov.model;
 
+import org.springframework.security.core.GrantedAuthority;
+
 import javax.persistence.*;
 @Entity
 @Table(name = "role")
-public class Role {
+public class Role implements GrantedAuthority {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -44,5 +46,10 @@ public class Role {
             return false;
         Role r = (Role) obj;
         return  this.name.equals(r.getName());
+    }
+
+    @Override
+    public String getAuthority() {
+        return name;
     }
 }

@@ -10,12 +10,6 @@
 <body>
 <h1>Login</h1>
 <form name='f' action="doLogin" method='POST'>
-    <c:if test="${not empty error}">
-        <div class="alert alert-danger">
-            <spring:message code="AbstractUserDetailsAuthenticationProvider.badCredentials"/>
-            <br/>
-        </div>
-    </c:if>
     <table>
         <tr>
             <td>User:</td>
